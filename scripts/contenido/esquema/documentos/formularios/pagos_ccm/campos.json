@@ -1,0 +1,1113 @@
+[
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "AS_TIPO_EAP",
+		"frm_class": "col-md-6",
+		"frm_items": [
+			{
+				"frm_value": "CVEAP-B1",
+				"frm_etiqueta": "1. SOLICITUD DE PAGO DE CCM (POSTERIOR AL RECHAZO DE JUBILACIÓN)"
+			},
+			{
+				"frm_value": "CVEAP-B2",
+				"frm_etiqueta": "2. CASOS NRF (NRO DE REGISTRO FALLECIDO, CON DERECHO A CCM)"
+			},
+			{
+				"frm_value": "CVEAP-B3",
+				"frm_etiqueta": "3. PAGOS TEMPORALES DE CCM"
+			},
+			{
+				"frm_value": "CVEAP-B4",
+				"frm_etiqueta": "4. INCLUSIÓN DE DERECHOHABIENTE"
+			},
+			{
+				"frm_value": "CVEAP-B5",
+				"frm_etiqueta": "5. SOLICITUD DE PAGO DE CCM (POSTERIOR AL RECHAZO DE PENSIÓN POR MUERTE)"
+			}
+			,
+			{
+				"frm_value": "CVEAP-B6",
+				"frm_etiqueta": "6. SOLICITUD DE PAGO DE CCM (ASEGURADO FALLECIDO - D.S.1888)"
+			}
+		],
+		"frm_funcion": "fechaActual();mensajeAlerta();",
+		"frm_etiqueta": "SUBCLASIFICACIÓN - TRÁMITE DE PAGO DE CCM",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "CASO_RECHAZADO",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Caso Rechazado",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "BUTTON",
+		"frm_campo": "REC_BUSCAR",
+		"frm_class": "col-md-1",
+		"frm_funcion": "getDatosRechazado();",
+		"frm_etiqueta": "BUSCAR",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "FECHA_INICIO_TRAMITE",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "FECHA INICIO TRAMITE",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "FORM_PAGCC_FECHA_APERSONAMIENTO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "FECHA APERSONAMIENTO",
+		"frm_id_campo": "FORM_PAGCC_FECHA_APERSONAMIENTO_ID",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TITLE",
+		"frm_campo": "SUBTITLE_1",
+		"frm_etiqueta": "SOLICITUD DE PAGO DE CCM",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITULO_1",
+		"frm_etiqueta": "DATOS DEL ASEGURADO",
+		"frm_deshabilitado": ""
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "AS_TIPO_DOCUMENTO",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{
+				"frm_value": "I",
+				"frm_etiqueta": "CEDULA IDENTIDAD"
+			},
+			{
+				"frm_value": "E",
+				"frm_etiqueta": "EXTRANJERO"
+			},
+			{
+				"frm_value": "P",
+				"frm_etiqueta": "PASAPORTE"
+			}
+		],
+		"frm_etiqueta": "Tipo Documento",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_CI",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Número de Documento",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_COMPLEMENTO",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Complemento",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "BUTTON",
+		"frm_campo": "AS_BUSCAR",
+		"frm_class": "col-md-1",
+		"frm_funcion": "verDatos();",
+		"frm_etiqueta": "BUSCAR",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "AS_NACIMIENTO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Fecha Nacimiento",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "NUMBER",
+		"frm_campo": "AS_CUA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Cua",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_PRIMER_APELLIDO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Primer Apellido",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_SEGUNDO_APELLIDO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Segundo Apellido",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_APELLIDO_CASADA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Apellido casada",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_PRIMER_NOMBRE",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Primer Nombre",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_SEGUNDO_NOMBRE",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Segundo Nombre",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_ESTADO_CIVIL",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Estado Civil",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_GENERO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Género",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "AS_ENTE_GESTOR",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{}
+		],
+		"frm_funcion": "cargarEnteGestor()",
+		"frm_etiqueta": "Ente Gestor de Salud",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_MATRICULA_ASEGURADO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Matrícula de Asegurado",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "AS_CIUDAD",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{}
+		],
+		"frm_funcion": "setProvinciaDepartamento();",
+		"frm_etiqueta": "Ciudad",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "PROVINCIA",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{}
+		],
+		"frm_etiqueta": "Provincia",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "AS_DEPARTAMENTO",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{}
+		],
+		"frm_etiqueta": "Departamento",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_ZONA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Zona/Villa/Barrio/Sector",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_DIRECCION",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Dirección",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_NUM",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Nro.",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_TELEFONO",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Teléfono",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_CELULAR",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Celular",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_POSTAL",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Casilla Postal",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "AS_CORREO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Correo Electrónico",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "AS_FECHA_FALLECIMIENTO",
+		"frm_class": "col-md-3",
+		"frm_funcion": "consultarMuerte();",
+		"frm_etiqueta": "Fecha de Fallecimiento",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "AS_IDPERSONA",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "ID_SOLICITUDPRESTACION",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "AS_API_ESTADO",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "AS_FECHA_DEFUNCION",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITULO_2",
+		"frm_etiqueta": "DATOS LABORALES DEL ASEGURADO",
+		"frm_deshabilitado": ""
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "EM_TIPO_AS",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{
+				"frm_value": "D",
+				"frm_etiqueta": "DEPENDIENTE"
+			},
+			{
+				"frm_value": "I",
+				"frm_etiqueta": "INDEPENDIENTE"
+			}
+		],
+		"frm_funcion": "datosTipoAsegurado()",
+		"frm_etiqueta": "Tipo Asegurado",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_NOMBRE",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nom.y Ap. o Razón Social del Empleador",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "EM_FECHA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Fecha inicio Rel. Lab",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_OCUPACION_AS",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Ocupación",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "EM_CIUDAD",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{}
+		],
+		"frm_funcion": "setProvinciaDepartamentoEM();",
+		"frm_etiqueta": "Ciudad",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "EM_PROVINCIA",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{}
+		],
+		"frm_etiqueta": "Provincia",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "EM_DEPARTAMENTO",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{}
+		],
+		"frm_etiqueta": "Departamento",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_ZONA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Zona/Villa/Barrio/Sector",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_DIRECCION",
+		"frm_class": "col-md-6",
+		"frm_etiqueta": "Dirección",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_NUM",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nro.",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "NUMBER",
+		"frm_campo": "EM_TELEFONO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Teléfono",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "NUMBER",
+		"frm_campo": "EM_CELULAR",
+		"frm_class": "col-md-4",
+		"frm_etiqueta": "Celular",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_POSTAL",
+		"frm_class": "col-md-4",
+		"frm_etiqueta": "Casilla Postal",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "EM_CORREO",
+		"frm_class": "col-md-4",
+		"frm_etiqueta": "Correo Electrónico",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "AS_CERT_INSALUBRIDAD",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{
+				"frm_value": "SI",
+				"frm_etiqueta": "SI"
+			},
+			{
+				"frm_value": "NO",
+				"frm_etiqueta": "NO"
+			}
+		],
+		"frm_funcion": "esconderadjunto()",
+		"frm_etiqueta": "Tiene Certificado de Insalubridad",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DOCUMENT",
+		"frm_campo": "CERT_INSALUBRIDAD",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Certificado de Insalubridad",
+		"frm_id_campo": "CERT_INSALUBRIDAD_ID",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITULO_3",
+		"frm_etiqueta": "DATOS DEL SOLICITANTE",
+		"frm_deshabilitado": ""
+	},
+	{
+		"frm_tipo": "CHECKBOX",
+		"frm_campo": "SOL_DIFERENTE_AS",
+		"frm_class": "col-md-2",
+		"frm_funcion": "esSolicitante();",
+		"frm_etiqueta": "Copiar datos del asegurado",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "SOL_TIPO_DOCUMENTO",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{
+				"frm_value": "I",
+				"frm_etiqueta": "CEDULA IDENTIDAD"
+			},
+			{
+				"frm_value": "E",
+				"frm_etiqueta": "EXTRANJERO"
+			},
+			{
+				"frm_value": "P",
+				"frm_etiqueta": "PASAPORTE"
+			}
+		],
+		"frm_etiqueta": "Tipo Documento",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "NUMBER",
+		"frm_campo": "SOL_CI",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Número de Documento",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_COMPLEMENTO",
+		"frm_class": "col-md-2",
+		"frm_etiqueta": "Complemento",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "BUTTON",
+		"frm_campo": "SOL_BUSCAR",
+		"frm_class": "col-md-1",
+		"frm_funcion": "verDatosSol();",
+		"frm_etiqueta": "BUSCAR",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "SOL_NACIMIENTO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Fecha Nacimiento",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "NUMBER",
+		"frm_campo": "SOL_CUA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Cua",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_PRIMER_APELLIDO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Primer Apellido",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_SEGUNDO_APELLIDO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Segundo Apellido",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_APELLIDO_CASADA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Apellido Casada",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_PRIMER_NOMBRE",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Primer Nombre",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_SEGUNDO_NOMBRE",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Segundo Nombre",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "SOL_PARENTESCO",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{}
+		],
+		"frm_funcion": "cargarParentesco();",
+		"frm_etiqueta": "Parentesco",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_ESTADO_CIVIL",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Estado Civil",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_GENERO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Género",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "SOL_CIUDAD",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{}
+		],
+		"frm_funcion": "setProvinciaDepartamentoSOL();",
+		"frm_etiqueta": "Ciudad",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "SOL_PROVINCIA",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{}
+		],
+		"frm_etiqueta": "Provincia",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "SOL_DEPARTAMENTO",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{}
+		],
+		"frm_etiqueta": "Departamento",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_ZONA",
+		"frm_class": "col-md-6",
+		"frm_etiqueta": "Zona/Villa/Barrio/Sector",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_DIRECCION",
+		"frm_class": "col-md-9",
+		"frm_etiqueta": "Dirección",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_NUM",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nro.",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_TELEFONO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Teléfono",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_CELULAR",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Celular",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_POSTAL",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Casilla Postal",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "SOL_CORREO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Correo Electrónico",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "SOL_IDPERSONA",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "TIENE_PODER_SOL_1",
+		"frm_class": "col-md-3",
+		"frm_items": [
+			{
+				"frm_value": "1",
+				"frm_etiqueta": "SI"
+			},
+			{
+				"frm_value": "2",
+				"frm_etiqueta": "NO"
+			}
+		],
+		"frm_funcion": "obligarPoder()",
+		"frm_etiqueta": "Tiene Poder",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "NRO_PODER_SOL_1",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nro. Poder",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "NRO_NOTARIA_SOL_1",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nro. Notaría",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "NOMBRE_NOTARIO_SOL_1",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nombre Notario",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITLE_11",
+		"frm_etiqueta": "DATOS DEL PODER",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "VALIDAR_PODER",
+		"frm_class": "col-md-2",
+		"frm_items": [
+			{
+				"frm_value": "APR",
+				"frm_etiqueta": "Aprobado"
+			},
+			{
+				"frm_value": "REC",
+				"frm_etiqueta": "Rechazado"
+			}
+		],
+		"frm_etiqueta": "Validación de Poder",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "FECHA_REVISION",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Fecha de Revisión",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITLE_12",
+		"frm_etiqueta": "DATOS DE RECHAZO DE JUBILACIÓN",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DOCUMENT_VER",
+		"frm_campo": "NOTA_RECHAZO_FIRMADO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Nota de rechazo",
+		"frm_id_campo": "NOTA_RECHAZO_FIRMADO_ID",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "FECHA_NOTIFICACION_RECHAZO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Fecha de notificación de Rechazo",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "MOTIVO_RECHAZO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Motivo de Rechazo",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "TEXT",
+		"frm_campo": "MONTO_RECHAZO",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Monto de CCM",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITULO_4",
+		"frm_etiqueta": "DERECHOHABIENTES",
+		"frm_deshabilitado": ""
+	},
+	{
+		"frm_cols": [
+			{
+				"col_tipo": "DROPDOWNLIST",
+				"col_campo": "DH_TIPO_DOCUMENTO",
+				"col_items": [
+					{
+						"itm_value": "I",
+						"itm_etiqueta": "CEDULA IDENTIDAD"
+					},
+					{
+						"itm_value": "E",
+						"itm_etiqueta": "EXTRANJERO"
+					},
+					{
+						"itm_value": "P",
+						"itm_etiqueta": "PASAPORTE"
+					},
+					{
+						"itm_value": "T",
+						"itm_etiqueta": "TEMPORAL"
+					}
+				],
+				"col_etiqueta": "TIPO DOCUMENTO",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "HIDDEN",
+				"col_campo": "DH_IDPERSONA_GRILLA_PROP",
+				"col_etiqueta": "DH_IDPERSONA_GRILLA_PROP",
+				"col_deshabilitado": "false"
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_CI_GRILLA_PROP",
+				"col_etiqueta": "CI",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_COMP_GRILLA_PROP",
+				"col_etiqueta": "COMPLEMENTO",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "BUTTON",
+				"col_campo": "DH_BUSCAR",
+				"col_funcion": "verDatosDh(rowIndex);",
+				"col_etiqueta": "BUSCAR"
+			},
+			{
+				"col_tipo": "DATE",
+				"col_campo": "DH_FECHA_NAC",
+				"col_etiqueta": "Fecha Nacimiento",
+				"col_deshabilitado": "true",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_NOMBRES",
+				"col_etiqueta": "Nombres",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_PRIMER_APELLIDO",
+				"col_etiqueta": "Primer Apellido",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_SEGUNDO_APELLIDO",
+				"col_etiqueta": "Segundo Apellido",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_APELLIDO_CASADA",
+				"col_etiqueta": "Ap. Casada",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "DROPDOWNLIST",
+				"col_campo": "DH_GENERO",
+				"col_items": [
+					{
+						"itm_value": "M",
+						"itm_etiqueta": "MASCULINO"
+					},
+					{
+						"itm_value": "F",
+						"itm_etiqueta": "FEMENINO"
+					}
+				],
+				"col_etiqueta": "Género",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_NRO_CELULAR",
+				"col_etiqueta": "Nro Celular",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "TEXT",
+				"col_campo": "DH_CORREO",
+				"col_etiqueta": "Correo",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "DROPDOWNLIST",
+				"col_campo": "DH_INVALIDEZ",
+				"col_items": [
+					{
+						"itm_value": false,
+						"itm_etiqueta": "NO"
+					},
+					{
+						"itm_value": true,
+						"itm_etiqueta": "SI"
+					}
+				],
+				"col_etiqueta": "ESTADO DE INVALIDEZ",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "DROPDOWNLIST",
+				"col_campo": "DH_PARENTESCO",
+				"col_items": [
+					{
+						"itm_value": "1-HIJ",
+						"itm_etiqueta": "Hija o Hijo"
+					},
+					{
+						"itm_value": "1-CONY",
+						"itm_etiqueta": "Cónyugue"
+					},
+					{
+						"itm_value": "1-CONV",
+						"itm_etiqueta": "Conviviente"
+					},
+					{
+						"itm_value": "2-HER",
+						"itm_etiqueta": "Hermano o Hermana"
+					},
+					{
+						"itm_value": "2-PAD",
+						"itm_etiqueta": "Padre"
+					},
+					{
+						"itm_value": "2-MAD",
+						"itm_etiqueta": "Madre"
+					}
+				],
+				"col_funcion": "esTercerGrado(rowIndex);",
+				"col_etiqueta": "PARENTESCO",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "HIDDEN",
+				"col_campo": "DH_GRADO",
+				"col_etiqueta": "GRADO",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			},
+			{
+				"col_tipo": "MODAL",
+				"col_campo": "DH_DOCUMENTOS",
+				"col_etiqueta": "DOCUMENTOS",
+				"col_deshabilitado": "false",
+				"col_deshabilitadoo": false
+			}
+		],
+		"frm_rows": [],
+		"frm_tipo": "GRID",
+		"frm_campo": "GRILLA_DERECHOHABIENTES",
+		"frm_value": [],
+		"frm_etiqueta": "DERECHOHABIENTES",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	}
+]

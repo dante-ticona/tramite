@@ -1,0 +1,127 @@
+[
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITULO_4",
+		"frm_etiqueta": "DATOS CONTRATO",
+		"frm_deshabilitado": ""
+	},
+	{
+		"frm_tipo": "BUTTON",
+		"frm_campo": "VERIFICAR COMTRATO PAGCC",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "Verificar contrato",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "DATE",
+		"frm_campo": "FORM_JUB_FECHA",
+		"frm_class": "col-md-3",
+		"frm_etiqueta": "FECHA INICIO",
+		"frm_id_campo": "FORM_JUB_FECHA_ID",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "true",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "SUBTITLE",
+		"frm_campo": "SUBTITULO_5",
+		"frm_etiqueta": "RESPUESTA DEL CIUDADANO",
+		"frm_deshabilitado": ""
+	},
+	{
+		"frm_tipo": "DROPDOWNLIST",
+		"frm_campo": "ESTADO_DERIVACION",
+		"frm_class": "col-md-4",
+		"frm_items": [
+			{
+				"frm_value": "OBSERVADO",
+				"frm_etiqueta": "OBSERVADO"
+			},
+			{
+				"frm_value": "DESISTIDO",
+				"frm_etiqueta": "DESISTIDO"
+			},
+			{
+				"frm_value": "ACEPTADO",
+				"frm_etiqueta": "ACEPTADO"
+			},
+			{
+				"frm_value": "CON NOTA DE RECHAZO",
+				"frm_etiqueta": "CON NOTA DE RECHAZO"
+			}
+		],
+		"frm_funcion": "estadoDerivacion()",
+		"frm_etiqueta": "ESTADO DERIVACIÓN",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "TEXTAREA",
+		"frm_campo": "DESCRIPCION_DERIVACION",
+		"frm_class": "col-md-7",
+		"frm_etiqueta": "DESCRIPCIÓN",
+		"frm_obligatorio": "true",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DOCUMENT",
+		"frm_campo": "CONTRATO_FIRMADO",
+		"frm_class": "col-md-4",
+		"frm_etiqueta": "CONTRATO DE FIRMADO POR EL ASEGURADO",
+		"frm_id_campo": "CONTRATO_FIRMADO_ID",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DOCUMENT",
+		"frm_campo": "NOTA_RECHAZO_FIRMADO",
+		"frm_class": "col-md-4",
+		"frm_etiqueta": "NOTA RECHAZO DE JUBILACIÓN",
+		"frm_id_campo": "NOTA_RECHAZO_FIRMADO_ID",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "DOCUMENT",
+		"frm_campo": "NOTA_DESISTIDO",
+		"frm_class": "col-md-4",
+		"frm_etiqueta": "NOTA DE DESISTIMIENTO",
+		"frm_id_campo": "NOTA_DESISTIDO_ID",
+		"frm_obligatorio": "false",
+		"frm_deshabilitado": "false",
+		"frm_deshabilitadoo": false
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "AS_IDPERSONA",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "ID_SOLICITUDPRESTACION",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "AS_API_ESTADO",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": true
+	},
+	{
+		"frm_tipo": "HIDDEN",
+		"frm_campo": "AS_FECHA_DEFUNCION",
+		"frm_etiqueta": "",
+		"frm_deshabilitado": "",
+		"frm_deshabilitadoo": true
+	}
+]

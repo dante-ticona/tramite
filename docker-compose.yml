@@ -1,0 +1,15 @@
+version: '3'
+services:
+    web:
+        image: iso_vys:latest
+
+        container_name: vys
+
+        build: .
+
+        ports:
+            - '8000:80'
+
+        volumes:
+            - './:/var/www/html'
+            

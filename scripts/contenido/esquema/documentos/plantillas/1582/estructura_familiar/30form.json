@@ -1,0 +1,730 @@
+[
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "AS_TIPO_EAP",
+        "frm_class": "col-md-6",
+        "frm_items": [
+            {
+                "frm_value": "CVEAP-B1",
+                "frm_etiqueta": "1. SOLICITUD DE JUBILACIÓN (LEY 1582) - AUTOMATICO"
+            },
+            {
+                "frm_value": "CVEAP-B2",
+                "frm_etiqueta": "2. SOLICITUD DE JUBILACIÓN (LEY 1582) - MANUAL"
+            }
+        ],
+        "frm_etiqueta": "SUBCLASIFICACIÓN - TRÁMITE DE JUBILACIÓN",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DATE",
+        "frm_campo": "FORM_JUB_FECHA",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "FECHA INICIO",
+        "frm_id_campo": "FORM_JUB_FECHA_ID",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TITLE",
+        "frm_campo": "SUBTITLE_1",
+        "frm_etiqueta": "SOLICITUD DE PENSIÓN DE JUBILACIÓN",
+        "frm_deshabilitado": "",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "SUBTITLE",
+        "frm_campo": "SUBTITULO_1",
+        "frm_etiqueta": "DATOS DEL ASEGURADO",
+        "frm_deshabilitado": ""
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "AS_TIPO_DOCUMENTO",
+        "frm_class": "col-md-3",
+        "frm_items": [
+            {
+                "frm_value": "I",
+                "frm_etiqueta": "CEDULA IDENTIDAD"
+            },
+            {
+                "frm_value": "E",
+                "frm_etiqueta": "EXTRANJERO"
+            },
+            {
+                "frm_value": "P",
+                "frm_etiqueta": "PASAPORTE"
+            }
+        ],
+        "frm_etiqueta": "Tipo Documento",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_CI",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Número de Documento",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_COMPLEMENTO",
+        "frm_class": "col-md-2",
+        "frm_etiqueta": "Complemento",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DATE",
+        "frm_campo": "AS_NACIMIENTO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Fecha Nacimiento",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "AS_CUA",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Cua",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_PRIMER_APELLIDO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Primer Apellido",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_SEGUNDO_APELLIDO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Segundo Apellido",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_APELLIDO_CASADA",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Apellido casada",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_PRIMER_NOMBRE",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Primer Nombre",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_SEGUNDO_NOMBRE",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Segundo Nombre",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "AS_ESTADO_CIVIL",
+        "frm_class": "col-md-3",
+        "frm_items": [
+            {
+                "frm_value": "SOLTERO(A)",
+                "frm_etiqueta": "SOLTERO(A)"
+            },
+            {
+                "frm_value": "CASADO(A)",
+                "frm_etiqueta": "CASADO(A)"
+            },
+            {
+                "frm_value": "DIVORCIADO(A)",
+                "frm_etiqueta": "DIVORCIADO(A)"
+            },
+            {
+                "frm_value": "VIUDO(A)",
+                "frm_etiqueta": "VIUDO(A)"
+            },
+            {
+                "frm_value": "CONVIVIENTE",
+                "frm_etiqueta": "CONVIVIENTE"
+            }
+        ],
+        "frm_etiqueta": "Estado Civil",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "AS_GENERO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Género",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "AS_CIUDAD",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {}
+        ],
+        "frm_funcion": "setProvinciaDepartamento();",
+        "frm_etiqueta": "Ciudad",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "PROVINCIA",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {}
+        ],
+        "frm_etiqueta": "Provincia",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "AS_DEPARTAMENTO",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {}
+        ],
+        "frm_etiqueta": "Departamento",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "AS_WHATSAPP",
+        "frm_class": "col-md-2",
+        "frm_etiqueta": "WhatsApp",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "AS_TELEFONO",
+        "frm_class": "col-md-2",
+        "frm_etiqueta": "Teléfono",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "AS_CELULAR",
+        "frm_class": "col-md-2",
+        "frm_etiqueta": "Celular",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "MAIL",
+        "frm_campo": "AS_CORREO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Correo Electrónico",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "AS_IDPERSONA",
+        "frm_etiqueta": "",
+        "frm_deshabilitado": "",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "ID_SOLICITUDPRESTACION",
+        "frm_etiqueta": "",
+        "frm_deshabilitado": "",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "AS_API_ESTADO",
+        "frm_etiqueta": "",
+        "frm_deshabilitado": "",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "_AGENCIA",
+        "frm_class": "col-md-1",
+        "frm_etiqueta": "",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "_USR_NOMBRE",
+        "frm_class": "col-md-1",
+        "frm_etiqueta": "",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "SUBTITLE",
+        "frm_campo": "SUBTITULO_3",
+        "frm_etiqueta": "DATOS DEL SOLICITANTE",
+        "frm_deshabilitado": ""
+    },
+    {
+        "frm_tipo": "CHECKBOX",
+        "frm_campo": "SOL_DIFERENTE_AS",
+        "frm_class": "col-md-2",
+        "frm_funcion": "esSolicitante();",
+        "frm_etiqueta": "Copiar datos del asegurado",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "SOL_TIPO_DOCUMENTO",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {
+                "frm_value": "I",
+                "frm_etiqueta": "CEDULA IDENTIDAD"
+            },
+            {
+                "frm_value": "E",
+                "frm_etiqueta": "EXTRANJERO"
+            },
+            {
+                "frm_value": "P",
+                "frm_etiqueta": "PASAPORTE"
+            }
+        ],
+        "frm_etiqueta": "Tipo Documento",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "SOL_CI",
+        "frm_class": "col-md-2",
+        "frm_etiqueta": "Número de Documento",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_COMPLEMENTO",
+        "frm_class": "col-md-2",
+        "frm_etiqueta": "Complemento",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DATE",
+        "frm_campo": "SOL_NACIMIENTO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Fecha Nacimiento",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "SOL_CUA",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Cua",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_PRIMER_APELLIDO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Primer Apellido",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_SEGUNDO_APELLIDO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Segundo Apellido",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_APELLIDO_CASADA",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Apellido Casada",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_PRIMER_NOMBRE",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Primer Nombre",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_SEGUNDO_NOMBRE",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Segundo Nombre",
+        "frm_obligatorio": "false",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "SOL_PARENTESCO",
+        "frm_class": "col-md-3",
+        "frm_items": [
+            {
+                "frm_value": "Hija o Hijo",
+                "frm_etiqueta": "Hija o Hijo"
+            },
+            {
+                "frm_value": "Conyugue",
+                "frm_etiqueta": "Conyugue"
+            },
+            {
+                "frm_value": "Conviviente",
+                "frm_etiqueta": "Conviviente"
+            },
+            {
+                "frm_value": "Hermano o Hermana",
+                "frm_etiqueta": "Hermano o Hermana"
+            },
+            {
+                "frm_value": "Padre",
+                "frm_etiqueta": "Padre"
+            },
+            {
+                "frm_value": "Madre",
+                "frm_etiqueta": "Madre"
+            },
+            {
+                "frm_value": "Otros",
+                "frm_etiqueta": "Otros"
+            },
+            {
+                "frm_value": "Solicitante",
+                "frm_etiqueta": "Solicitante"
+            }
+        ],
+        "frm_etiqueta": "Parentesco",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_ESTADO_CIVIL",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Estado Civil",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "TEXT",
+        "frm_campo": "SOL_GENERO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Género",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "SOL_CIUDAD",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {}
+        ],
+        "frm_funcion": "setProvinciaDepartamentoSOL();",
+        "frm_etiqueta": "Ciudad",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "SOL_PROVINCIA",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {}
+        ],
+        "frm_etiqueta": "Provincia",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "SOL_DEPARTAMENTO",
+        "frm_class": "col-md-2",
+        "frm_items": [
+            {}
+        ],
+        "frm_etiqueta": "Departamento",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "SOL_WHATSAPP",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "WhatsApp",
+        "frm_obligatorio": "falseun",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "SOL_TELEFONO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Teléfono",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "NUMBER",
+        "frm_campo": "SOL_CELULAR",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Celular",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "MAIL",
+        "frm_campo": "SOL_CORREO",
+        "frm_class": "col-md-3",
+        "frm_etiqueta": "Correo Electrónico",
+        "frm_deshabilitado": "true",
+        "frm_deshabilitadoo": true
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "SOL_IDPERSONA",
+        "frm_etiqueta": "",
+        "frm_deshabilitado": "",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "SUBTITLE",
+        "frm_campo": "SUBTITULO_1",
+        "frm_etiqueta": "ESTRUCTURA FAMILIAR",
+        "frm_deshabilitado": ""
+    },
+    {
+        "frm_cols": [
+            {
+                "col_tipo": "HIDDEN",
+                "col_campo": "TEXT",
+                "col_funcion": "esDhFallecido(rowIndex);",
+                "col_etiqueta": "ES DH FALLECIDO",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "HIDDEN",
+                "col_campo": "DH_IDPERSONA_GRILLA_PROP",
+                "col_etiqueta": "DH_IDPERSONA_GRILLA_PROP",
+                "col_deshabilitado": "true"
+            },
+            {
+                "col_tipo": "TEXT",
+                "col_campo": "DH_CI_GRILLA_PROP",
+                "col_etiqueta": "CI",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "TEXT",
+                "col_campo": "DH_COMP_GRILLA_PROP",
+                "form_class": "form-control",
+                "col_etiqueta": "COMPLEMENTO",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "DATE",
+                "col_campo": "DH_FECHA_NAC",
+                "col_etiqueta": "Fecha Nacimiento",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "TEXT",
+                "col_campo": "DH_NOMBRES",
+                "col_etiqueta": "Nombres",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "TEXT",
+                "col_campo": "DH_PRIMER_APELLIDO",
+                "col_etiqueta": "Primer Apellido",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "TEXT",
+                "col_campo": "DH_SEGUNDO_APELLIDO",
+                "col_etiqueta": "Segundo Apellido",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "TEXT",
+                "col_campo": "DH_APELLIDO_CASADA",
+                "col_etiqueta": "Ap. Casada",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "DROPDOWNLIST",
+                "col_campo": "DH_GENERO",
+                "col_items": [
+                    {
+                        "itm_value": "M",
+                        "itm_etiqueta": "MASCULINO"
+                    },
+                    {
+                        "itm_value": "F",
+                        "itm_etiqueta": "FEMENINO"
+                    }
+                ],
+                "col_etiqueta": "Género",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            },
+            {
+                "col_tipo": "DROPDOWNLIST",
+                "col_campo": "DH_PARENTESCO",
+                "col_items": [
+                    {
+                        "itm_value": "HIJ",
+                        "itm_etiqueta": "Hija o Hijo"
+                    },
+                    {
+                        "itm_value": "CONY",
+                        "itm_etiqueta": "Cónyugue"
+                    },
+                    {
+                        "itm_value": "CONV",
+                        "itm_etiqueta": "Conviviente"
+                    },
+                    {
+                        "itm_value": "HER",
+                        "itm_etiqueta": "Hermano o Hermana"
+                    },
+                    {
+                        "itm_value": "PAD",
+                        "itm_etiqueta": "Padre"
+                    },
+                    {
+                        "itm_value": "MAD",
+                        "itm_etiqueta": "Madre"
+                    },
+                    {
+                        "itm_value": "OTR",
+                        "itm_etiqueta": "Otros"
+                    }
+                ],
+                "col_funcion": "esTercerGrado(rowIndex);",
+                "col_etiqueta": "Parentesco",
+                "col_deshabilitado": "true",
+                "col_deshabilitadoo": true
+            }
+        ],
+        "frm_rows": [],
+        "frm_tipo": "GRID_1582",
+        "frm_campo": "GRILLA_DERECHOHABIENTES",
+        "frm_value": [],
+        "frm_etiqueta": "DERECHOHABIENTES - LEY 1582",
+        "frm_deshabilitado": "false",
+        "frm_deshabilitadoo": false
+    },
+
+    {
+        "frm_tipo": "SUBTITLE",
+        "frm_campo": "SUBTITULO_5",
+        "frm_etiqueta": "VERIFICACIÓN SUPERVISOR",
+        "frm_deshabilitado": ""
+    },
+    {
+        "frm_tipo": "DROPDOWNLIST",
+        "frm_campo": "ESTADO_DERIVACION",
+        "frm_class": "col-md-4",
+        "frm_items": [
+            {
+                "frm_value": "VALIDADO",
+                "frm_etiqueta": "VALIDADO"
+            },
+            {
+                "frm_value": "OBSERVADO",
+                "frm_etiqueta": "OBSERVADO"
+            }
+        ],
+        "frm_etiqueta": "ESTADO DERIVACIÓN",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "false",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "TEXTAREA",
+        "frm_campo": "DESCRIPCION_DERIVACION",
+        "frm_class": "col-md-6",
+        "frm_etiqueta": "DESCRIPCIÓN",
+        "frm_obligatorio": "true",
+        "frm_deshabilitado": "false",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "RECHAZO",
+        "frm_class": "col-md-1",
+        "frm_etiqueta": "",
+        "frm_deshabilitado": "false",
+        "frm_deshabilitadoo": false
+    },
+    {
+        "frm_tipo": "HIDDEN",
+        "frm_campo": "ESTA_RZT",
+        "frm_class": "col-md-1",
+        "frm_etiqueta": "",
+        "frm_deshabilitado": "false",
+        "frm_deshabilitadoo": false
+    }
+]
