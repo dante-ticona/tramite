@@ -5,224 +5,58 @@
     }
 
     
-    function esSolicitanteCobrador() {
+function esSolicitanteCobrador() {
         console.log('esSolicitanteCobrador');
         var valor = document.getElementById("SOL_COBRADOR").checked;
         console.log('valor del checked =>', valor);
+        var ids = [
+            'COB_BUSCAR',
+            'SUBTITULO_COBRADOR_idd',
+            'COB_TIPO_DOCUMENTO_idd', 'COB_TIPO_DOCUMENTO',
+            'COB_CI_idd', 'COB_CI',
+            'COB_COMPLEMENTO_idd', 'COB_COMPLEMENTO',
+            'COB_NACIMIENTO_idd', 'COB_NACIMIENTO',
+            'COB_PRIMER_APELLIDO_idd', 'COB_PRIMER_APELLIDO',
+            'COB_SEGUNDO_APELLIDO_idd', 'COB_SEGUNDO_APELLIDO',
+            'COB_APELLIDO_CASADA_idd', 'COB_APELLIDO_CASADA',
+            'COB_PRIMER_NOMBRE_idd', 'COB_PRIMER_NOMBRE',
+            'COB_SEGUNDO_NOMBRE_idd', 'COB_SEGUNDO_NOMBRE',
+            'COB_PARENTESCO_idd', 'COB_PARENTESCO',
+            'COB_GENERO_idd', 'COB_GENERO',
+            'COB_CIUDAD_idd', 'COB_CIUDAD',
+            'COB_PROVINCIA', 'COB_PROVINCIA_idd',
+            'COB_DEPARTAMENTO_idd', 'COB_DEPARTAMENTO',
+            'COB_ZONA_idd', 'COB_ZONA',
+            'COB_DIRECCION_idd', 'COB_DIRECCION',
+            'COB_NUM_idd', 'COB_NUM',
+            'COB_CELULAR_idd', 'COB_CELULAR',
+            'COB_TELEFONO_idd', 'COB_TELEFONO',
+            'COB_POSTAL_idd', 'COB_POSTAL',
+            'COB_CORREO_idd', 'COB_CORREO'
+        ];
+
         if (!valor){
-          /*  const listaMensajes = `<h1> desmarcado  </h1>`;
-            const icono_imagen = "img/advertencia_1.jpg";
-            const cabecera = "Trámites registrados";
-            modalMensajeDinamico(listaMensajes,icono_imagen,cabecera);*/
-
-                    document.querySelector('#COB_BUSCAR').required = false;
-                    document.querySelector('#SUBTITULO_COBRADOR_idd').required = false;
-                    document.querySelector('#COB_TIPO_DOCUMENTO_idd').required = false;
-                    document.querySelector('#COB_TIPO_DOCUMENTO').required = false;
-                    document.querySelector('#COB_CI_idd').required = false;
-                    document.querySelector('#COB_CI').required = false;
-                    document.querySelector('#COB_COMPLEMENTO_idd').required = false;
-                    document.querySelector('#COB_COMPLEMENTO').required = false;
-                    document.querySelector('#COB_NACIMIENTO_idd').required = false;
-                    document.querySelector('#COB_NACIMIENTO').required = false;
-                    document.querySelector('#COB_PRIMER_APELLIDO_idd').required = false;
-                    document.querySelector('#COB_PRIMER_APELLIDO').required = false;
-                    document.querySelector('#COB_SEGUNDO_APELLIDO_idd').required = false;
-                    document.querySelector('#COB_SEGUNDO_APELLIDO').required = false;
-                    document.querySelector('#COB_APELLIDO_CASADA_idd').required = false;
-                    document.querySelector('#COB_APELLIDO_CASADA').required = false;
-                    document.querySelector('#COB_PRIMER_NOMBRE_idd').required = false;
-                    document.querySelector('#COB_PRIMER_NOMBRE').required = false;
-                    document.querySelector('#COB_SEGUNDO_NOMBRE_idd').required = false;
-                    document.querySelector('#COB_SEGUNDO_NOMBRE').required = false;
-                    document.querySelector('#COB_PARENTESCO_idd').required = false;
-                    document.querySelector('#COB_PARENTESCO').required = false;
-                    document.querySelector('#COB_GENERO_idd').required = false;
-                    document.querySelector('#COB_GENERO').required = false;
-                    document.querySelector('#COB_CIUDAD_idd').required = false;
-                    document.querySelector('#COB_CIUDAD').required = false;
-                    document.querySelector('#COB_PROVINCIA').required = false;
-                    document.querySelector('#COB_PROVINCIA_idd').required = false;
-                    document.querySelector('#COB_DEPARTAMENTO_idd').required = false;
-                    document.querySelector('#COB_DEPARTAMENTO').required = false;
-                    document.querySelector('#COB_ZONA_idd').required = false;
-                    document.querySelector('#COB_ZONA').required = false;
-                    document.querySelector('#COB_DIRECCION_idd').required = false;
-                    document.querySelector('#COB_DIRECCION').required = false;
-                    document.querySelector('#COB_NUM_idd').required = false;
-                    document.querySelector('#COB_NUM').required = false;
-                    document.querySelector('#COB_CELULAR_idd').required = false;
-                    document.querySelector('#COB_CELULAR').required = false;
-                    document.querySelector('#COB_TELEFONO_idd').required = false;
-                    document.querySelector('#COB_TELEFONO').required = false;
-                    document.querySelector('#COB_POSTAL_idd').required = false;
-                    document.querySelector('#COB_POSTAL').required = false;
-                    document.querySelector('#COB_CORREO_idd').required = false;
-                    document.querySelector('#COB_CORREO').required = false;
-   
-            _hide("COB_BUSCAR");
-            _hide("SUBTITULO_COBRADOR_idd");
-            _hide("COB_TIPO_DOCUMENTO_idd");
-            _hide("COB_TIPO_DOCUMENTO");
-            _hide("COB_CI_idd");
-            _hide("COB_CI");
-            _hide("COB_COMPLEMENTO_idd");
-            _hide("COB_COMPLEMENTO");
-            _hide("COB_NACIMIENTO_idd");
-            _hide("COB_NACIMIENTO");
-            _hide("COB_PRIMER_APELLIDO_idd");
-            _hide("COB_PRIMER_APELLIDO");
-            _hide("COB_SEGUNDO_APELLIDO_idd");
-            _hide("COB_SEGUNDO_APELLIDO");
-            _hide("COB_APELLIDO_CASADA_idd");
-            _hide("COB_APELLIDO_CASADA");
-            _hide("COB_PRIMER_NOMBRE_idd");
-            _hide("COB_PRIMER_NOMBRE");
-            _hide("COB_SEGUNDO_NOMBRE_idd");
-            _hide("COB_SEGUNDO_NOMBRE");
-            _hide("COB_PARENTESCO_idd");
-            _hide("COB_PARENTESCO");
-            _hide("COB_GENERO_idd");
-            _hide("COB_GENERO");
-            _hide("COB_CIUDAD_idd");
-            _hide("COB_CIUDAD");
-            _hide("COB_PROVINCIA");
-            _hide("COB_PROVINCIA_idd");
-            _hide("COB_DEPARTAMENTO_idd");
-            _hide("COB_DEPARTAMENTO");
-            _hide("COB_ZONA_idd");
-            _hide("COB_ZONA");
-            _hide("COB_DIRECCION_idd");
-            _hide("COB_DIRECCION");
-            _hide("COB_NUM_idd");
-            _hide("COB_NUM");
-            _hide("COB_CELULAR_idd");
-            _hide("COB_CELULAR");
-            _hide("COB_TELEFONO_idd");
-            _hide("COB_TELEFONO");
-            _hide("COB_POSTAL_idd");
-            _hide("COB_POSTAL");
-            _hide("COB_CORREO_idd");
-            _hide("COB_CORREO");
-
-
-
-
-
-
-
-
-
+            ids.forEach(function(id) {
+                var el = document.querySelector('#' + id);
+                if (el) {
+                    el.required = false;
+                }
+                _hide(id);
+            });
         } else {
-
-            document.querySelector('#COB_BUSCAR').required = true;
-            document.querySelector('#SUBTITULO_COBRADOR_idd').required = true;
-            document.querySelector('#COB_TIPO_DOCUMENTO_idd').required = true;
-            document.querySelector('#COB_TIPO_DOCUMENTO').required = true;
-            document.querySelector('#COB_CI_idd').required = true;
-            document.querySelector('#COB_CI').required = true;
-            document.querySelector('#COB_COMPLEMENTO_idd').required = true;
-            document.querySelector('#COB_COMPLEMENTO').required = true;
-            document.querySelector('#COB_NACIMIENTO_idd').required = true;
-            document.querySelector('#COB_NACIMIENTO').required = true;
-            document.querySelector('#COB_PRIMER_APELLIDO_idd').required = true;
-            document.querySelector('#COB_PRIMER_APELLIDO').required = true;
-            document.querySelector('#COB_SEGUNDO_APELLIDO_idd').required = true;
-            document.querySelector('#COB_SEGUNDO_APELLIDO').required = true;
-            document.querySelector('#COB_APELLIDO_CASADA_idd').required = true;
-            document.querySelector('#COB_APELLIDO_CASADA').required = true;
-            document.querySelector('#COB_PRIMER_NOMBRE_idd').required = true;
-            document.querySelector('#COB_PRIMER_NOMBRE').required = true;
-            document.querySelector('#COB_SEGUNDO_NOMBRE_idd').required = true;
-            document.querySelector('#COB_SEGUNDO_NOMBRE').required = true;
-            document.querySelector('#COB_PARENTESCO_idd').required = true;
-            document.querySelector('#COB_PARENTESCO').required = true;
-            document.querySelector('#COB_GENERO_idd').required = true;
-            document.querySelector('#COB_GENERO').required = true;
-            document.querySelector('#COB_CIUDAD_idd').required = true;
-            document.querySelector('#COB_CIUDAD').required = true;
-            document.querySelector('#COB_PROVINCIA').required = true;
-            document.querySelector('#COB_PROVINCIA_idd').required = true;
-            document.querySelector('#COB_DEPARTAMENTO_idd').required = true;
-            document.querySelector('#COB_DEPARTAMENTO').required = true;
-            document.querySelector('#COB_ZONA_idd').required = true;
-            document.querySelector('#COB_ZONA').required = true;
-            document.querySelector('#COB_DIRECCION_idd').required = true;
-            document.querySelector('#COB_DIRECCION').required = true;
-            document.querySelector('#COB_NUM_idd').required = true;
-            document.querySelector('#COB_NUM').required = true;
-            document.querySelector('#COB_CELULAR_idd').required = true;
-            document.querySelector('#COB_CELULAR').required = true;
-            document.querySelector('#COB_TELEFONO_idd').required = true;
-            document.querySelector('#COB_TELEFONO').required = true;
-            document.querySelector('#COB_POSTAL_idd').required = true;
-            document.querySelector('#COB_POSTAL').required = true;
-            document.querySelector('#COB_CORREO_idd').required = true;
-            document.querySelector('#COB_CORREO').required = true;
-
-            _show("COB_BUSCAR");
-            _show("SUBTITULO_COBRADOR_idd");
-            _show("COB_TIPO_DOCUMENTO_idd");
-            _show("COB_TIPO_DOCUMENTO");
-            _show("COB_CI_idd");
-            _show("COB_CI");
-            _show("COB_COMPLEMENTO_idd");
-            _show("COB_COMPLEMENTO");
-            _show("COB_NACIMIENTO_idd");
-            _show("COB_NACIMIENTO");
-            _show("COB_PRIMER_APELLIDO_idd");
-            _show("COB_PRIMER_APELLIDO");
-            _show("COB_SEGUNDO_APELLIDO_idd");
-            _show("COB_SEGUNDO_APELLIDO");
-            _show("COB_APELLIDO_CASADA_idd");
-            _show("COB_APELLIDO_CASADA");
-            _show("COB_PRIMER_NOMBRE_idd");
-            _show("COB_PRIMER_NOMBRE");
-            _show("COB_SEGUNDO_NOMBRE_idd");
-            _show("COB_SEGUNDO_NOMBRE");
-            _show("COB_PARENTESCO_idd");
-            _show("COB_PARENTESCO");
-            _show("COB_GENERO_idd");
-            _show("COB_GENERO");
-            _show("COB_CIUDAD_idd");
-            _show("COB_CIUDAD");
-            _show("COB_PROVINCIA");
-            _show("COB_PROVINCIA_idd");
-            _show("COB_DEPARTAMENTO_idd");
-            _show("COB_DEPARTAMENTO");
-            _show("COB_ZONA_idd");
-            _show("COB_ZONA");
-            _show("COB_DIRECCION_idd");
-            _show("COB_DIRECCION");
-            _show("COB_NUM_idd");
-            _show("COB_NUM");
-            _show("COB_CELULAR_idd");
-            _show("COB_CELULAR");
-            _show("COB_TELEFONO_idd");
-            _show("COB_TELEFONO");
-            _show("COB_POSTAL_idd");
-            _show("COB_POSTAL");
-            _show("COB_CORREO_idd");
-            _show("COB_CORREO");
-
-
-
-                /*const listaMensajes = `<h1>marcado </h1>`;
-                const icono_imagen = "img/advertencia_1.jpg";
-                const cabecera = "Trámites registrados";
-                modalMensajeDinamico(listaMensajes,icono_imagen,cabecera);*/
-            
-            
+            ids.forEach(function(id) {
+                var el = document.querySelector('#' + id);
+                if (el) {
+                    if (id !== 'COB_COMPLEMENTO_idd' && id !== 'COB_COMPLEMENTO') {
+                        el.required = true;
+                    } else {
+                        el.required = false;
+                    }
+                }
+                _show(id);
+            });
         }
-
-
-
-
-
-
-
-
-    }
+}
     function respuestaAsegurado(){
         const AS_TIPO_DOCUMENTO = document.getElementById("AS_TIPO_DOCUMENTO").value 
         if (AS_TIPO_DOCUMENTO =='C') {
