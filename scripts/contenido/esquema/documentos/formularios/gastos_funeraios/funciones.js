@@ -1103,52 +1103,35 @@ function esSolicitanteCobrador() {
 
     function formularioHTML(datares) {
         esSolicitanteCobrador();
-        console.log('datares',datares);
-    
-                        
-                            document.getElementById("AS_PRIMER_NOMBRE").value = datares.data.primerNombre;
-                            document.getElementById("AS_PRIMER_NOMBRE").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_SEGUNDO_NOMBRE").value = datares.data.segundoNombre;
-                            document.getElementById("AS_SEGUNDO_NOMBRE").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_PRIMER_APELLIDO").value = datares.data.primerApellido;
-                            document.getElementById("AS_PRIMER_APELLIDO").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_SEGUNDO_APELLIDO").value = datares.data.segundoApellido || "";
-                            document.getElementById("AS_SEGUNDO_APELLIDO").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_NACIMIENTO").value = datares.data.fechaNacimiento;
-                            document.getElementById("AS_NACIMIENTO").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_APELLIDO_CASADA").value = datares.data.apellidoCasada || "";
-                            document.getElementById("AS_APELLIDO_CASADA").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_CUA").value = datares.data.cua;
-                            document.getElementById("AS_CUA").dispatchEvent(new Event('input'));
-                            if (datares.data.idGenero === 'M') {
-                                document.getElementById("AS_GENERO").value = 'MASCULINO';
-                            } else {
-                                document.getElementById("AS_GENERO").value = 'FEMENINO';
-                            }
-                            document.getElementById("AS_GENERO").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_ESTADO_CIVIL").value = datares.data.idEstadoCivil;
-                            if (datares.data.idEstadoCivil === 'C') {
-                                document.getElementById("AS_ESTADO_CIVIL").value = 'CASADO(A)';
-                            } else {
-                                document.getElementById("AS_ESTADO_CIVIL").value = 'SOLTERO(A)';
-                            }
-                            document.getElementById("AS_ESTADO_CIVIL").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_API_ESTADO").value = datares.data.apiEstado || "";
-                            document.getElementById("AS_API_ESTADO").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_IDPERSONA").value = datares.data.idPersonaSip || "";
-                            document.getElementById("AS_IDPERSONA").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_APELLIDO_CASADA").value = datares.data.apellidoCasada || "";
-                            document.getElementById("AS_APELLIDO_CASADA").dispatchEvent(new Event('input'));
-                            document.getElementById("AS_FECHA_FALLECIMIENTO").value = datares.data.fechaDefuncion || "";
-                            document.getElementById("AS_FECHA_FALLECIMIENTO").dispatchEvent(new Event('input'));
+        console.log('datares', datares);
 
-                            if (datares.data.complemento !== null) {
-                                document.getElementById("AS_COMPLEMENTO").value = datares.data.complemento || "";
-                                document.getElementById("AS_COMPLEMENTO").dispatchEvent(new Event('input'));
-                            } else {
-                                document.getElementById("AS_COMPLEMENTO").value = "";
-                                document.getElementById("AS_COMPLEMENTO").dispatchEvent(new Event('input'));
-                            }
+        const setValue = (id, value) => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.value = value ?? '';
+                el.dispatchEvent(new Event('input'));
+            }
+        };
+
+        const d = datares.data;
+
+        const values = {
+            AS_PRIMER_NOMBRE: d.primerNombre,
+            AS_SEGUNDO_NOMBRE: d.segundoNombre,
+            AS_PRIMER_APELLIDO: d.primerApellido,
+            AS_SEGUNDO_APELLIDO: d.segundoApellido,
+            AS_NACIMIENTO: d.fechaNacimiento,
+            AS_APELLIDO_CASADA: d.apellidoCasada,
+            AS_CUA: d.cua,
+            AS_GENERO: d.idGenero === 'M' ? 'MASCULINO' : 'FEMENINO',
+            AS_ESTADO_CIVIL: d.idEstadoCivil === 'C' ? 'CASADO(A)' : 'SOLTERO(A)',
+            AS_API_ESTADO: d.apiEstado,
+            AS_IDPERSONA: d.idPersonaSip,
+            AS_FECHA_FALLECIMIENTO: d.fechaDefuncion,
+            AS_COMPLEMENTO: d.complemento !== null ? d.complemento : ''
+        };
+
+        Object.entries(values).forEach(([id, value]) => setValue(id, value));
 
     }
 
