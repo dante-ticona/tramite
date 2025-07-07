@@ -725,7 +725,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in periodos" :key="index">
+        <tr v-for="(item, index) in form.periodos" :key="index">
           <td class="border px-1">
             <input type="text" v-model="item.desde" class="w-full p-1 border rounded" placeholder="dd/mm/aaaa" />
           </td>
