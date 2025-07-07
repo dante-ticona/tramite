@@ -482,10 +482,10 @@
  <section class="mt-6">
     <h3 class="font-bold text-lg mb-2">10. Datos relativos a los familiares del asegurado</h3>
 
-    <div v-for="(fam, idx) in familiares" :key="idx" class="border p-4 mt-4 relative rounded">
+    <div v-for="(fam, idx) in form.family" :key="idx" class="border p-4 mt-4 relative rounded">
       <h4 class="font-semibold mb-2">{{ idx + 1 }}º Familiar</h4>
       <button
-        v-if="familiares.length > 1"
+        v-if="form.family.length > 1"
         class="absolute top-2 right-2 text-red-600"
         @click="eliminarFamiliar(idx)"
         title="Eliminar"
@@ -493,39 +493,39 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
         <label>Apellido(s):
-          <input v-model="fam.family.apellido" class="input" />
+          <input v-model="fam.apellido" class="input" />
         </label>
         <label>Nombre(s):
-          <input v-model="fam.family.nombres" class="input" />
+          <input v-model="fam.nombres" class="input" />
         </label>
 
         <div>
           Sexo:
-          <label class="ml-2"><input type="radio" value="M" v-model="fam.family.sexo" /> Hombre</label>
-          <label class="ml-4"><input type="radio" value="F" v-model="fam.family.sexo" /> Mujer</label>
+          <label class="ml-2"><input type="radio" value="M" v-model="fam.sexo" /> Hombre</label>
+          <label class="ml-4"><input type="radio" value="F" v-model="fam.sexo" /> Mujer</label>
         </div>
 
         <label>Parentesco:
-          <input v-model="fam.family.parentesco" class="input" />
+          <input v-model="fam.parentesco" class="input" />
         </label>
 
         <label>Fecha de nacimiento:
-          <input type="date" v-model="fam.family.fechaNac" class="input" />
+          <input type="date" v-model="fam.fechaNac" class="input" />
         </label>
 
         <div class="flex flex-col gap-2 md:col-span-2">
-          <label><input type="checkbox" v-model="fam.family.incapacitado" /> ¿Está incapacitado para el trabajo?</label>
-          <label><input type="checkbox" v-model="fam.family.trabaja" /> ¿Trabaja?</label>
-          <label><input type="checkbox" v-model="fam.family.convive" /> ¿Convive con el solicitante?</label>
-          <label><input type="checkbox" v-model="fam.family.solicitaPension" /> ¿Solicita pensión?</label>
+          <label><input type="checkbox" v-model="fam.incapacitado" /> ¿Está incapacitado para el trabajo?</label>
+          <label><input type="checkbox" v-model="fam.trabaja" /> ¿Trabaja?</label>
+          <label><input type="checkbox" v-model="fam.convive" /> ¿Convive con el solicitante?</label>
+          <label><input type="checkbox" v-model="fam.solicitaPension" /> ¿Solicita pensión?</label>
         </div>
 
         <label>Ingresos anuales:
-          <input type="number" min="0" v-model="fam.family.ingresos" class="input" />
+          <input type="number" min="0" v-model="fam.ingresos" class="input" />
         </label>
 
         <label class="md:col-span-2">Dirección:
-          <input v-model="fam.family.direccion" class="input" />
+          <input v-model="fam.direccion" class="input" />
         </label>
       </div>
     </div>
@@ -1057,7 +1057,7 @@ function removeFamiliar(i) {
 }
 
 function agregarFamiliar() {
-  familiares.push({
+  form.family.push({
     apellido: '',
     nombres: '',
     sexo: '',
@@ -1074,7 +1074,7 @@ function agregarFamiliar() {
 
 function eliminarFamiliar(index) {
   if (confirm('¿Eliminar este familiar?')) {
-    familiares.splice(index, 1)
+    form.family.splice(index, 1)
   }
 }
 </script>
